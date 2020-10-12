@@ -1,0 +1,29 @@
+{
+  "name": "zoo-keepr",
+  "version": "1.0.0",
+  "description": "Zoo Keepr",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tchestnut85/zoo-keepr.git"
+  },
+  "keywords": [
+    "server",
+    "express",
+    "zoo",
+    "animal"
+  ],
+  "author": "Tom Chestnut",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tchestnut85/zoo-keepr/issues"
+  },
+  "homepage": "https://github.com/tchestnut85/zoo-keepr#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
