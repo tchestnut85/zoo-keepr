@@ -1,6 +1,12 @@
 const express = require('express');
 const PORT = process.env.PORT || 3001;
 const app = express();
+
+// parse incoming string or array data
+app.use(express.urlencoded({ extended: true }));
+// parse incoming JSON data
+app.use(express.json());
+
 const { animals } = require('./data/animals');
 
 function filterByQuery(query, animalsArray) {
@@ -49,6 +55,7 @@ function findById(id, animalsArray) {
     return result;
 }
 
+// listen for GET request for animals by query
 app.get('/api/animals/', (req, res) => {
     let results = animals;
     if (req.query) {
@@ -57,6 +64,7 @@ app.get('/api/animals/', (req, res) => {
     res.json(results);
 });
 
+// listen for GET request for animals by id parameter
 app.get('/api/animals/:id', (req, res) => {
     const result = findById(req.params.id, animals);
     if (result) {
@@ -66,6 +74,14 @@ app.get('/api/animals/:id', (req, res) => {
     }
 });
 
+// listen for POST request from client to add new animals to JSON
+app.post('/api/animals', (req, res) => {
+    // eq.body is where our incoming content will be
+    console.log(req.body);
+    res.json(req.body);
+});
+
+// run the server or the appropriate PORT through Heroku
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
 });
