@@ -146,6 +146,15 @@
         "hungry"
       ],
       "id": "14"
+    },
+    {
+      "name": "Gollum",
+      "species": "hobbit",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "15"
     }
   ]
 }
