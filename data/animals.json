@@ -155,6 +155,15 @@
         "hungry"
       ],
       "id": "15"
+    },
+    {
+      "name": "Frodo",
+      "species": "pug",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "16"
     }
   ]
 }

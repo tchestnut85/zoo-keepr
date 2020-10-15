@@ -10,7 +10,7 @@ const printResults = resultArr => {
       <h4 class="text-primary">${name}</h4>
       <p>Age: ${age}<br/>
       Favorite Animal: ${favoriteAnimal.substring(0, 1).toUpperCase() +
-        favoriteAnimal.substring(1)}<br/>
+      favoriteAnimal.substring(1)}<br/>
       </p>
     </div>
   </div>
