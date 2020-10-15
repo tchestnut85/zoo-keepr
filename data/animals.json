@@ -164,6 +164,15 @@
         "hungry"
       ],
       "id": "16"
+    },
+    {
+      "name": "Tom",
+      "species": "human",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "zany"
+      ],
+      "id": "17"
     }
   ]
 }
