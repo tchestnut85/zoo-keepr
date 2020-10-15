@@ -51,7 +51,7 @@ test("finds by id", () => {
             species: "bear",
             diet: "carnivore",
             personalityTraits: ["impish", "sassy", "brave"],
-        },
+        }
     ];
 
     const result = findById("3", startingAnimals);

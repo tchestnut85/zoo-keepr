@@ -173,6 +173,15 @@
         "zany"
       ],
       "id": "17"
+    },
+    {
+      "name": "stinker",
+      "species": "skunk",
+      "diet": "folivore",
+      "personalityTraits": [
+        "goofy"
+      ],
+      "id": "18"
     }
   ]
 }
